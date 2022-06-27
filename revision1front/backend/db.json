@@ -1,0 +1,39 @@
+{
+  "annonces": [
+    {
+      "id": 1,
+      "titre": "Annonce 1",
+      "description": "Soirées d'Entreprise ....",
+      "position": "haut",
+      "etat": "confirmé"
+    },
+    {
+      "id": 2,
+      "titre": "Annonce 2",
+      "description": "Séminaires d'Entreprise ....",
+      "position": "bas",
+      "etat": "annulé"
+    },
+    {
+      "id": 3,
+      "titre": "Annonce 3",
+      "description": "Lancement de Produits electroniques...",
+      "position": "bas",
+      "etat": "en attente"
+    },
+    {
+      "id": "6",
+      "titre": "annonce 6",
+      "description": "Description6",
+      "position": "Position6",
+      "etat": "annulé"
+    },
+    {
+      "id": "7",
+      "titre": "annonce 7",
+      "description": "description 7",
+      "position": "Position 7",
+      "etat": "confirmé"
+    }
+  ]
+}

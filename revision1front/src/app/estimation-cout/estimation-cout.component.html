@@ -1,0 +1,17 @@
+<p>estimation-cout works!</p>
+<form #f="ngForm">
+    <label for="">Position souhaitée</label>
+    <select name="list" ngModel required #lis="ngModel">
+        <option></option>
+        <option>haut</option>
+        <option>bas</option>
+    </select>
+    <div *ngIf="lis.invalid">field required</div>
+    <label for="">Nombre de caractéres</label>
+    <input type="number"  name="nbre" ngModel  required #nbre="ngModel"  />
+    <div *ngIf="nbre.invalid">field required</div>
+    <div *ngIf="nbre.value > 60"> le nombre de caracteres ne doit pas dépasser 60</div>
+    <input type="submit" value="estimer" (click)="estimation(f.value)" />
+    
+    </form>
+    {{msg}}

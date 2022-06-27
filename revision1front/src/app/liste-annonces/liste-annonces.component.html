@@ -1,0 +1,28 @@
+
+
+<table border="1">
+<thead >
+    <tr>
+        <th>Id</th>
+        <th>Titre</th>
+        <th>Description</th>
+        <th>Position</th>
+        <th>Etat</th>                            
+        <th colspan="3">Action</th>
+    </tr>
+</thead>
+<tbody>
+
+   <tr *ngFor=" let i of list">
+    
+    <td >{{i.id}}</td>
+    <td>{{i.titre}}</td>
+    <td> {{i.description}}</td>
+    <td> {{i.position}}</td>
+    <td> {{i.etat}}</td>
+    <td> <a [routerLink]="['/detail/',i.id]">Détail</a></td>
+    <td> <a [routerLink]="['/delete/',i.id]">Delete</a></td>
+    <td> <a [routerLink]="['/update/',i.id]">update</a></td>
+    </tr>
+    </tbody>
+</table>

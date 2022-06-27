@@ -1,0 +1,21 @@
+
+<form #f1="ngForm">
+    <div>
+        <label>id</label><input type="text" name="id" [(ngModel)]="annonce.id">
+        </div>
+     <div>
+     <label>Titre</label><input type="text" name="titre" [(ngModel)]="annonce.titre">
+     </div>
+    <div>
+    <label>Description</label><input type="text"name="description"[(ngModel)]="annonce.description">
+    </div>
+    <div>
+        <label>Position</label><input type="text"name="position"[(ngModel)]="annonce.position">
+        </div>
+        <div>
+            <label>Etat</label><input type="text"name="etat"[(ngModel)]="annonce.etat">
+            </div>
+        <input type="submit" value="save"(click)="ajouter(f1.value)">
+
+
+</form>
